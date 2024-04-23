@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html
+  lang="uz
+"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <p>Logo</p>
+        <nav>
+          <ul class="list">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+        <button id="darkmodeBtn">
+          <img id="darkmodeImg" src="./images/sun.png" width="20px" alt="" />
+          Light mode
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="container main-container">
+        <h2 class="title">To Do Form</h2>
+
+        <form id="todoForm">
+          <div class="div">
+            <input
+              id="searchInp"
+              type="text"
+              required
+              placeholder="Enter todo"
+            />
+            <button id="submitBtn" type="submit">Submit</button>
+          </div>
+        </form>
+        <ul id="productList">
+          <li id="listItem"></li>
+        </ul>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+:root {
+  --header-bg: linear-gradient(to right, #347b8f 0%, #56b4d3 51%, #348b8f 100%);
+  --header-text: #fff;
+
+  --main-bg: #fff;
+  --main-text: #1d1d5f;
+  --footer-bg: linear-gradient(to right, #347b8f 0%, #56b4d3 51%, #348b8f 100%);
+  --footer-text: #fff;
+  --product-list: linear-gradient(
+    to right,
+    #347a8f 0%,
+    #56b4d3 51%,
+    #34848f 100%
+  );
+  --product-text: #fff;
+  --btn-color: linear-gradient(to right, #47fafd 0%, #24effe 51%, #47e8fd 100%);
+}
+.light {
+  --header-bg: linear-gradient(to right, #e0eafc 0%, #cfdef3 51%, #e0eafc 100%);
+  --header-text: #1d1d5f;
+
+  --main-bg: linear-gradient(to right, #ece9e6 0%, #ffffff 51%, #ece9e6 100%);
+  --main-text: #fff;
+  --footer-bg: linear-gradient(to right, #e0eafc 0%, #cfdef3 51%, #e0eafc 100%);
+  --footer-text: #1d1d5f;
+  --product-list: #fff;
+  --product-text: #5ca4bc;
+  --btn-color: linear-gradient(to right, #47fafd 0%, #24effe 51%, #47e8fd 100%);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+ul,
+ol {
+  list-style: none;
+}
+.header {
+  padding: 20px 0;
+  background: var(--header-bg);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--header-text);
+}
+#darkmodeBtn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main {
+  flex-grow: 1;
+  background-image: var(--main-bg);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+footer {
+  height: 100px;
+  background-image: var(--footer-bg);
+  color: var(--footer-text);
+}
+.container {
+  width: 95%;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.title {
+  color: #1d1d5f;
+}
+button {
+  max-width: 400px;
+  background-image: var(--btn-color);
+  color: #fff;
+  border: none;
+  border-radius: 11px;
+  padding: 6px 12px;
+}
+#productList {
+  display: flex;
+  flex-direction: column;
+  background-image: var(--product-list);
+  color: var(--product-text);
+  width: 200px;
+  gap: 5px;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+  border: 1px solid #fff;
+}
